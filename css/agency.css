@@ -173,7 +173,6 @@ fieldset[disabled] .btn-xl.active {
     color: #fe0000;
     background-color: #fff;
 }
-
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -184,6 +183,7 @@ fieldset[disabled] .btn-xl.active {
     color: #fe0000;
     font-weight:bold;
 }
+
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
