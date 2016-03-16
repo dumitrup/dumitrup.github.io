@@ -1,1 +1,8 @@
-address: 42 Walker House, 11 Odessa Str, London, SE16 7HD
+linkedinDomain: http://linkedin.com/in
+facebookDomain: http://facebook.com
+twitterDomain: http://twitter.com
+
+website:
+    postalAddress: 42 Walker House, 11 Odessa Str, London, SE16 7HD
+    facebookUrl: https://facebook.com/panasysuk
+    linkedinUrl: https://www.linkedin.com/company/panasys-ltd

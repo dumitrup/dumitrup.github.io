@@ -140,9 +140,9 @@ layout: default
                         <h4>{{ site.data.accounts['dumitru'].name }}</h4>
                         <p class="text-muted">Software Engineer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="{{ site.data.accounts['dumitru'].twitter }}"><i class="fa fa-twitter"></i></a>
+                            <li><a href="{{site.data.general.twitterDomain}}/{{ site.data.accounts['dumitru'].twitter }}"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="{{ site.data.accounts['dumitru'].linkedin }}"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="{{site.data.general.linkedinDomain}}/{{ site.data.accounts['dumitru'].linkedin }}"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -153,7 +153,7 @@ layout: default
                         <h4>Diana Ionita</h4>
                         <p class="text-muted">Software Engineer (collaborator) </p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="{{site.data.general.linkedinDomain}}/{{ site.data.accounts['diana'].linkedin }}"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -202,7 +202,7 @@ layout: default
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
                     <h3 class="section-subheading text-white">Please use the form below and we will contact you.<br/>
-                    Alternatively you can mail us at {{ site.data.general.address }}</h3>
+                    Alternatively you can mail us at {{ site.data.general.website.postalAddress }}</h3>
                 </div>
                 </div>
             </div>
