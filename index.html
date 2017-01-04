@@ -7,7 +7,7 @@ layout: default
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-        <a class="navbar-brand page-scroll" href="#page-top"><img class="col-xs-5 img-responsive"src="img/logo-site.png"/></a>
+        <a class="navbar-brand page-scroll" href="#page-top"><img class="col-xs-5 img-responsive" src="{{ site.baseurl }}/img/logo-site.png"/></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -23,19 +23,22 @@ layout: default
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#technologies">Technologies</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#technologies">Technologies</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ site.baseurl }}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -99,7 +102,7 @@ layout: default
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/portfolio/solirius.png" alt="">
+                                <img class="img-circle img-responsive" src="{{ site.baseurl }}/img/portfolio/solirius.png" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -136,7 +139,7 @@ layout: default
             <div class="row">
                 <div class="col-sm-6">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ site.baseurl }}/img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>{{ site.data.accounts['dumitru'].name }}</h4>
                         <p class="text-muted">Software Engineer</p>
                         <ul class="list-inline social-buttons">
@@ -149,7 +152,7 @@ layout: default
                 </div>
                 <div class="col-sm-6">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ site.baseurl }}/img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Diana Ionita</h4>
                         <p class="text-muted">Software Engineer (collaborator) </p>
                         <ul class="list-inline social-buttons">
@@ -179,63 +182,97 @@ layout: default
             <div class="row">
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/java8-logo.png" class="img-responsive img-centered" alt="Java 8">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/java8-logo.png" class="img-responsive img-centered" alt="Java 8">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/spring-logo.png" class="img-responsive img-centered" alt="Srping">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/spring-logo.png" class="img-responsive img-centered" alt="Spring">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/groovy-logo.png" class="img-responsive img-centered" alt="Groovy">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/groovy-logo.png" class="img-responsive img-centered" alt="Groovy">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/camel-logo.png" class="img-responsive img-centered" alt="Camel">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/camel-logo.png" class="img-responsive img-centered" alt="Camel">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/docker-logo.png" class="img-responsive img-centered" alt="Docker">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/docker-logo.png" class="img-responsive img-centered" alt="Docker">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/spring-boot-logo.png" class="img-responsive img-centered" alt="Spring Boot">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/spring-boot-logo.png" class="img-responsive img-centered" alt="Spring Boot">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/selenium-logo.png" class="img-responsive img-centered" alt="Selenium">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/selenium-logo.png" class="img-responsive img-centered" alt="Selenium">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/cxf-logo.png" class="img-responsive img-centered" alt="Apache CXF">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/cxf-logo.png" class="img-responsive img-centered" alt="Apache CXF">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/fuse-logo.jpg" class="img-responsive img-centered" alt="Jboss Fuse">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/fuse-logo.jpg" class="img-responsive img-centered" alt="Jboss Fuse">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/tomcat-logo.jpg" class="img-responsive img-centered" alt="Tomcat Server">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/tomcat-logo.jpg" class="img-responsive img-centered" alt="Tomcat Server">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/servicemix-logo.png" class="img-responsive img-centered" alt="ServiceMix">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/servicemix-logo.png" class="img-responsive img-centered" alt="ServiceMix">
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <a href="#">
-                        <img src="img/logos/technologies/mybatis-logo.png" class="img-responsive img-centered" alt="Mybatis">
+                        <img src="{{ site.baseurl }}/img/logos/technologies/mybatis-logo.png" class="img-responsive img-centered" alt="Mybatis">
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Aside -->
+    <section id="blog" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Articles</h2>
+                    <h3 class="section-subheading text-muted">Some of articles we wrote:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-10">
+                    <ul>
+                        {% for post in site.posts %}
+                        <li>
+                            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                            {{ post.excerpt }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-2">
+                    <h1>Posts</h1>
+                    <ul>
+                        {% for post in site.posts %}
+                        <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>

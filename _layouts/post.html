@@ -1,15 +1,90 @@
 ---
 layout: default
 ---
+<body id="page-top" class="index">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-shrink">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand page-scroll" href="#page-top"><img class="col-xs-5 img-responsive"
+                                                                      src="{{ site.baseurl }}/img/logo-site.png"/></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/#services">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/#team">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/#technologies">Technologies</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10">
+                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+                <p class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:
+                        "%b
+                        %-d,
+                        %Y" }}
+                    </time>
+                    {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                        itemprop="name">{{ page.author }}</span></span>{% endif %}
+                </p>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
+                <div class="post-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+                <h1>History</h1>
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div>
+            {% if page.previous.url %}
+                <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+            {% endif %}
+            {% if page.next.url %}
+                <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+            {% endif %}
+        </div>
+    </div>
 </article>
+</body>
