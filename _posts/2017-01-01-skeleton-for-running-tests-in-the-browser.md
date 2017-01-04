@@ -10,6 +10,7 @@ While writing Javascript code I felt the need to have a playground project where
 It consists of an `index.html` and a `specs.js` file that contains the tests.
 When the [server][live-server] is running it will look for any changes in the tests and reload the browser.
 
+**index.html**
 {% highlight HTML %}
 
 <html>
@@ -36,7 +37,7 @@ When the [server][live-server] is running it will look for any changes in the te
 </body>
 </html>
 {% endhighlight %}
-
+**specs.js**
 {% highlight JavaScript %}
 var should = chai.should;
 chai.should();
